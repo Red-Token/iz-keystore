@@ -40,7 +40,17 @@
   },
   "dependencies": {
     "iz-nostrlib": "^0.0.1",
-    "yargs": "^17.7.2"
+    "yargs": "^17.7.2",
+    "@welshman/app": "~0.0.29",
+    "@welshman/content": "~0.0.12",
+    "@welshman/dvm": "~0.0.10",
+    "@welshman/feeds": "~0.0.25",
+    "@welshman/lib": "~0.0.26",
+    "@welshman/net": "~0.0.38",
+    "@welshman/signer": "~0.0.14",
+    "@welshman/store": "~0.0.12",
+    "@welshman/util": "~0.0.45",
+    "nostr-tools": "^2.10.3"
   },
   "bin": {
     "iz-keystore": "./dist/index.js"
