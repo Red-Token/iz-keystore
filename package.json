@@ -1,0 +1,48 @@
+{
+  "name": "iz-keystore",
+  "version": "0.0.1",
+  "description": "Keystore for Nostr",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "module": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "mocha --require mock-local-storage --import tsx test/**/*.test.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Red-Token/iz-keystore.git"
+  },
+  "author": "Rene Malmgren",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/Red-Token/iz-keystore/issues"
+  },
+  "homepage": "https://github.com/Red-Token/iz-keystore#readme",
+  "mocha": {
+    "node-option": [
+      "import=tsx"
+    ]
+  },
+  "devDependencies": {
+    "@types/chai": "^5.0.1",
+    "@types/expect": "^24.3.2",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^22.9.0",
+    "chai": "^5.1.2",
+    "mocha": "^10.8.2",
+    "mock-local-storage": "^1.1.24",
+    "ts-mocha": "^10.0.0",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "iz-nostrlib": "^0.0.1",
+    "yargs": "^17.7.2"
+  },
+  "bin": {
+    "iz-keystore": "./dist/index.js"
+  }
+}
